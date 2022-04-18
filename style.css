@@ -1,0 +1,173 @@
+body{
+  text-align: center;
+  margin: auto;
+  background-color: black;
+}
+
+.box{
+  display: inline-block;
+ position: relative;
+ text-align: center;
+margin: auto;
+display:none;
+}
+
+.first {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transform: rotate(-2deg);
+  
+}
+
+.first:hover {
+  transform: rotate(5deg);
+  transition-duration: 5s;
+  transition-property: all;
+}
+
+#black {
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+}
+
+#black:hover {
+  animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+  
+}
+.pic {
+  display: inline-block;
+  background-image: url('img/cart.png');
+  width: 100px;
+  height: 100px;
+
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+ 
+  
+  transform: rotate(-5deg);
+  
+}
+
+@keyframes trambling-animation {
+  0%, 50%, 100% {
+  }
+  10%, 30% {
+      transform: rotate(-10deg);
+  }
+  20%, 40% {
+      transform: rotate(10deg);
+  }
+}
+
+.pic:hover {
+
+background-color: black;
+  background-image: url('img/scale_1200.webp');
+  margin-top: 150px;
+ 
+  transform: scale(10);
+  transition-duration: 0.5s;
+  transition-property: all;
+  
+}
+
+.pic:hover~body{background-color: black;}
+
+.kn {display: inline-table; display: none;}
+
+.kn:hover {
+ 
+
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+
+
+h1 {
+  display: inline-block;
+  color: white;
+}
+
+h1:hover {
+  transform: scale(1.5);
+  filter: blur(1px);
+  transition-duration: 3s;
+  color: rgb(116, 9, 9);
+  
+}
+h2{
+  display: inline-block;
+  color: white;
+  filter: blur(1px);
+  display: none;
+}
+h2:hover {
+  filter: blur(0.3px);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+
+
+      .click {
+        transform: rotate(10deg);
+        position: relative;
+        font-size: 50px;
+        
+        color: blue;
+        margin-top: 100px;
+        filter: blur(1.5px);
+       
+      }
+    
+  .click:hover {
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 10px;
+transition-property: all;
+    transition-duration:2s;
+    filter: blur(0.1px);
+    color: rgb(75, 6, 6);
+  }
+
+  .mail {
+    position:fixed;
+    text-align: left;
+        bottom:0;
+        opacity: 50%;
+        color: white;
+  }
+
+  .mail::after {
+    content: "by Ткачук Денис";
+  }
+
+  .svet {
+    filter: blur(10px);
+    text-align: right;
+    float: right;
+        bottom:0;
+        opacity: 50%;
+        color: white;
+        display: none;
+  }
+
+  .svet:hover {
+    filter: blur(0.6px);
+    transition-property: all;
+    transition-duration: 4s;
+  }
+
+  @keyframes letter{
+    0% {opacity: 0; transform: translateY(-15px)}
+    100% {opacity: 1; transform: translateY(0px)}
+  }
+  
+  .word div {
+    animation: letter 0.5s;  
+    display: inline-block;
+  }
